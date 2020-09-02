@@ -21,7 +21,7 @@ echo $'\nDownloading mp3 files in "YTmp3" folder\n'
 if [[ $ytdl == "/usr/local/bin/youtube-dl" && $ffmp == "/usr/bin/ffmpeg" ]];
 then
 	
-	for VIDEOS in $(cat $dir/videos_list.txt)
+	for VIDEOS in $(cat "$dir/videos_list.txt")
 	do
 		youtube-dl -x --audio-format mp3 --prefer-ffmpeg $VIDEOS && ((cont=cont+1))
 	done
