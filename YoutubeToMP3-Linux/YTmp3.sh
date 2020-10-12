@@ -31,13 +31,13 @@ then
 else
 
 	#ffmpeg not installed
-	if [ $ffmp != $"/usr/bin/ffmpeg" ]
+	if [ "$ffmp" != "/usr/bin/ffmpeg" ]
 	then
 		echo $'\nInstall ffmpeg to download the mp3!!!'
 	fi
-	
+
 	#youtube-dl not installed
-	if [ $ytdl != "/usr/local/bin/youtube-dl" ]
+	if [ "$ytdl" != "/usr/local/bin/youtube-dl" ]
 	then
 	
 		echo $'\nInstall youtube-dl to download the mp3!!!'
